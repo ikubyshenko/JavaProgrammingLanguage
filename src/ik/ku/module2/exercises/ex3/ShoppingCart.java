@@ -68,12 +68,12 @@ class ShoppingCart {
     //    }
     //
     //    public double calculateTotal(double[] prices) {
-    //        double calc = 0;
+    //        double calculatingTotal = 0;
     //
     //        for (double price : prices) {
-    //            calc += price;
+    //            calculatingTotal += price;
     //        }
     //
-    //        return calculateTax(calc);
+    //        return calculateTax(calculatingTotal);
     //    }
 }
