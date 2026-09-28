@@ -10,12 +10,12 @@ class ShoppingCart {
             System.out.println(itemPrices[i]);
         }
 
-        double calc = calculateTotal(itemPrices);
+        double calculatingTotal = calculateTotal(itemPrices);
         double tax = calculateTax(itemPrices);
-        double taxm = calculateHMTax(itemPrices);
+        double checkTax = checkTax(itemPrices);
 
-        System.out.println("Cart total: " + calc);
-        System.out.println("Tax: " + taxm);
+        System.out.println("Cart total: " + calculatingTotal);
+        System.out.println("Tax: " + checkTax);
         System.out.println("Total cost: " + tax);
 
     }
@@ -24,13 +24,13 @@ class ShoppingCart {
 
     public static double calculateTotal(double[] Prices) {
 
-        double calc = 0;
+        double calculatingTotal = 0;
 
         for (int i = 0; i < Prices.length; i++) {
-            calc += Prices[i];
+            calculatingTotal += Prices[i];
         }
 
-        return calc;
+        return calculatingTotal;
     }
 
     // I know that calculateTax shouldn’t calculate the tax on its own;
@@ -40,14 +40,14 @@ class ShoppingCart {
     // but I couldn’t do it because I didn’t know how,
     // so I fixed it (the way it should be).
 
-    public static double calculateHMTax(double[] Prices) {
-        double taxm = 0;
+    public static double checkTax(double[] Prices) {
+        double taxcheck = 0;
 
         for (int i = 0; i < Prices.length; i++) {
-            taxm += Prices[i];
+            taxcheck += Prices[i];
         }
 
-        return taxm * 0.10;
+        return taxcheck * 0.10;
 
     }
 
@@ -62,10 +62,6 @@ class ShoppingCart {
 
     }
 
-    public static void taxCheck(double[] prices) {
-
-
-    }
 
     // public double calculateTax(double price) {
     //        return price * 1.10;
