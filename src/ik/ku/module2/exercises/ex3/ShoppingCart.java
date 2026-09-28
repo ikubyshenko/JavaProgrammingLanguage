@@ -13,6 +13,7 @@ class ShoppingCart {
         double calc = calculateTotal(itemPrices);
         double tax = calculateTax(itemPrices);
         double taxm = calculateHMTax(itemPrices);
+
         System.out.println("Cart total: " + calc);
         System.out.println("Tax: " + taxm);
         System.out.println("Total cost: " + tax);
